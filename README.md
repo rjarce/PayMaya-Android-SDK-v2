@@ -1,6 +1,6 @@
 # PayMayaSDK
 
-![Release](https://jitpack.io/v/paymaya/paymaya-android-sdk-v2.svg)
+[![Release](https://jitpack.io/v/paymaya/paymaya-android-sdk-v2.svg)](https://jitpack.io/#paymaya/paymaya-android-sdk-v2)
 
 The PayMaya Android SDK is a library that allows you integrate with PayMaya
 payments. It supports following methods:
