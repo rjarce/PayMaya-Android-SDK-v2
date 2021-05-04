@@ -2,4 +2,4 @@ jdk:
   - openjdk8
 install:
   - echo "Building SDK only for Jitpack"
-  - ./gradlew :sdk:clean :sdk:publishToMavenLocal
+  - ./gradlew :sdk:clean :sdk:publishReleasePublicationToMavenLocal
