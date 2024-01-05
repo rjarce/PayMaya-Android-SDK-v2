@@ -7,7 +7,7 @@ import com.paymaya.sdk.android.checkout.models.Item
 import com.paymaya.sdk.android.demo.Constants.DECIMALS
 import com.paymaya.sdk.android.demo.R
 import com.paymaya.sdk.android.demo.databinding.HolderCartProductBinding
-import java.math.BigDecimal
+import java.math.RoundingMode
 
 class CartItemAdapter(
     private val onRemoveFromCartRequestListener: OnRemoveFromCartRequestListener
@@ -36,7 +36,7 @@ class CartItemAdapter(
 
     inner class ItemViewHolder(private val binding: HolderCartProductBinding) : RecyclerView.ViewHolder(binding.root) {
         fun setData(product: Item) {
-            val amount = product.totalAmount.value.setScale(DECIMALS, BigDecimal.ROUND_HALF_DOWN).toString()
+            val amount = product.totalAmount.value.setScale(DECIMALS, RoundingMode.HALF_DOWN).toString()
 
             binding.productName.text = product.name
             binding.productTotalAmount.text = "$amount ${product.totalAmount.currency}"

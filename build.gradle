@@ -1,7 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.9.10'
+    ext {
+        agp_version = '7.4.2'
+    }
+    ext.kotlin_version = '1.8.21'
     repositories {
         google()
         mavenCentral()
@@ -9,7 +12,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0'
+        classpath "com.android.tools.build:gradle:$agp_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
         classpath "org.jlleitschuh.gradle:ktlint-gradle:9.1.1"
@@ -49,10 +52,10 @@ allprojects {
     }
 
     ext {
-        compileSdkVersion = 34
-        buildToolsVersion = "34.0.0"
+        compileSdkVersion = 33
+        buildToolsVersion = "33.0.0"
         minSdkVersion = 21
-        targetSdkVersion = 34
+        targetSdkVersion = 33
     }
 }
 
