@@ -1,17 +1,21 @@
-# PayMayaSDK
+# Maya Android SDK
 
 [![Release](https://jitpack.io/v/paymaya/paymaya-android-sdk-v2.svg)](https://jitpack.io/#paymaya/paymaya-android-sdk-v2)
 
-The PayMaya Android SDK is a library that allows you integrate with PayMaya
-payments. It supports following methods:
-* Checkout
-    * Checkout (WebView)
-* Pay With PayMaya
-    * Single Payment (WebView)
-    * Create Wallet Link (WebView)
-* PayMaya Vault
-    * Tokenize Card (native activity)
-    
+## Overview
+
+Official Android SDK by Maya Philippines for [online payment solutions](https://developers.maya.ph/docs/online-payments).
+For assistance, please check our [developer support page](https://developers.maya.ph/docs/support).
+
+## Supported Use Cases
+
+* [Checkout](https://developers.maya.ph/docs/maya-checkout)
+* [Maya Vault](https://developers.maya.ph/docs/maya-vault)
+  * Capturing tokenized card information via a customizable credit card form
+* [Pay with Maya](https://developers.maya.ph/docs/pay-with-maya)
+  * One-time payment
+  * Create a link to a Maya Wallet
+
 The SDK includes Demo application which uses Sandbox environment.
 
 #### Compatibility
